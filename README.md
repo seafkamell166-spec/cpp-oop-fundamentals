@@ -59,7 +59,7 @@ cpp-oop-fundamentals/
 - Recursive problem solving with a clear base case
 - Working with `std::vector` as a dynamically-sized alternative to raw arrays
 
-## Notes
-This is coursework/practice code rather than a finished application — a couple of the exercises have known rough edges kept intentionally as-found:
-- `templates/find_min_template.cpp` has a logic bug in its nested loop (it can return before scanning the full array), so it does not always report the true minimum.
+## Known Limitations
+This is coursework/practice code rather than a finished application:
+- `templates/find_min_template.cpp` had a logic bug — a duplicated nested loop that could return before scanning the full array, so it didn't always report the true minimum. **Fixed** (see commit history) to a single pass that scans the whole array.
 - `classes/rectangle/rectangle.h` and a couple of other files have a harmless stray semicolon after some `#include` lines (a common early C++ typo — it doesn't affect compilation, just untidy style).
